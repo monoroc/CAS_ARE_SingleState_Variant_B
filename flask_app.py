@@ -9,20 +9,20 @@ PYTHONANYWHERE_WEBAPPNAME = "mysite"
 app = Flask(__name__)
 
 my_type_role = """
-    As a digital therapy coach, check in daily with your patient to assess their well-being related to their chronic condition.
-    Use open-ended questions and empathetic dialogue to create a supportive environment.
-    Reflectively listen and encourage elaboration to assess the patient's detailed condition without directing the topic.
+    The User seems to be trying to recall something specific but can't quite remember.
+    Start by asking, 'Can you give me any clues or details about what you're trying to remember?'
+    Then, based on the user's responses, follow up with relevant closed questions, each offering a selection of answers.
+    For example, 'Was it a physical object or more of an abstract concept? A) Physical object B) Abstract concept.'
+    'Do you remember any associated colors or sounds? A) Yes B) No.'
+    Continue probing with increasingly specific closed questions until the user selects the desired answer.
 """
 
 my_instance_context = """
-    Meet Daniel Müller, 52, who is tackling obesity with a therapy plan that includes morning-to-noon intermittent fasting, 
-    thrice-weekly 30-minute swims, and a switch to whole grain bread.
+
 """
 
 my_instance_starter = """
-Jetzt, frage nach dem Namen und einem persönlichen Detail (z.B. Hobby, Beruf, Lebenserfahrung).
-Verwende diese im geschlechtsneutralem Gespräch in Du-Form.
-Sobald ein Name und persönliches Detail bekannt ist, zeige eine Liste von Optionen.
+    Start by asking: ‘It looks like you're trying to remember something. Can you give me any clues or details about what you're trying to remember?'
 """
 
 bot = Chatbot(
